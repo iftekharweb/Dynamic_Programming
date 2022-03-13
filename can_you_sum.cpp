@@ -5,8 +5,8 @@ Q. Is is possible to generate the sum using the numbers of the array (as many ti
 3 2
 4 7
 3 4 5 7
-1 7
-2
+2 300
+7 14
 => output 
 possible
 possible
@@ -14,7 +14,7 @@ impossible
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Time complexity O(n^m) | Space complexity O(m) | Best approch
+1. Time complexity O(n*m) | Space complexity O(m) | Best approch
    
 ll canSum(ll targetSum, set<ll> a, vector<ll> &mm)
 {
