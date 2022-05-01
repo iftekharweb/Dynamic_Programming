@@ -1,4 +1,4 @@
-1. Time COmplexity : O(n) | Memorization Apprroch (Top-Bottom)
+1. Time COmplexity : O(n) | Memoization Apprroch (Top-Bottom)
 
 vector<ll> dp(N,MOD);
 ll MinSquare(ll n) {
