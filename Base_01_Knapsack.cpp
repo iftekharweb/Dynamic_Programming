@@ -1,4 +1,4 @@
-Memoization Approch : 01 Knapscak
+Topic : 01 Knapscak
 Problem : Maximum profit
 Link : https://youtu.be/fJbIuhs24zQ
 inpout : 
