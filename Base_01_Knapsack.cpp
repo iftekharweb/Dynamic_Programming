@@ -8,7 +8,7 @@ inpout :
 output : 
 7
 
-  
+1 . Recursion + Memoization Approch  | 
   
 vector<ll> weight(N) , value(N);
 ll dp[N][N];
@@ -42,9 +42,31 @@ ll solve()
         ll mx = Knapsack(w,n)
         return mx;
 }
-int main() 
+
+
+2. Iterative + Top-down Approch  | 
+
+ll Knapsack(ll w ,ll n) {
+        for(int i=0; i<=n; i++) {
+            for(int j=0; j<=w; j++) {
+                if(!i || !j) dp[i][j] = 0;
+                else if(weight[i-1]<=w) {
+                    dp[i][j] = max(value[i-1]+dp[i-1][j-weight[i-1]] , dp[i-1][j]);
+                }
+                else if(weight[i-1]>w) {
+                    dp[i][j] = dp[i-1][j];
+                }
+            }
+        }
+        return dp[n][w];
+}
+
+ll solve()
 {
-        FastIO;
-        cout << solve() << endl;
-        return 0;
+        ll n = vin() , w = vin();
+        for(int i=0; i<=n; i++) for(int j=0; j<=w; j++) dp[i][j] = -1;
+        for(int i=0; i<n; i++) weight[i] = vin();
+        for(int i=0; i<n; i++) value[i] = vin();
+        ll mx = Knapsack(w,n);
+        return mx;
 }
