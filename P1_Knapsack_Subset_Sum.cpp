@@ -25,7 +25,7 @@ ll Knapsack(ll sum ,ll n)
                 if(i==0 && j==0) dp[i][j] = true;
                 else if(i && !j) dp[i][j] = true;
                 else if(!i && j) dp[i][j] = false;
-                else if(value[i-1]<=sum) {
+                else if(value[i-1]<=j) {
                     dp[i][j] = (dp[i-1][j-value[i-1]] || dp[i-1][j]);
                 }
                 else {
