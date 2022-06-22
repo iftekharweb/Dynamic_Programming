@@ -1,5 +1,5 @@
-Topic : 01 Knapscak Variation 01
-Problem : Is Possible to generate sum from subset ?
+Topic : 01 Knapscak Variation 02
+Problem : Can you split the array into two equal portions ?
 Link : https://youtu.be/fJbIuhs24zQ
 inpout : 
 5
